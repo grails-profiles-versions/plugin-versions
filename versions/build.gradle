@@ -40,8 +40,9 @@ dependencies {
 }
 
 bootRun {
-    jvmArgs = ['-Dspring.output.ansi.enabled=always']
-}// enable if you wish to package this plugin as a standalone application
+    jvmArgs('-Dspring.output.ansi.enabled=always')
+}
+// enable if you wish to package this plugin as a standalone application
 bootRepackage.enabled = false
 grailsPublish {
     // TODO: Provide values here
