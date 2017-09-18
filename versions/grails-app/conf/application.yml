@@ -2,12 +2,15 @@ grails:
     profile: plugin
     codegen:
         defaultPackage: versions
+    spring:
+        transactionManagement: false
 info:
     app:
         name: '@info.app.name@'
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
 spring:
+
     groovy:
         template:
             check-template-location: false
