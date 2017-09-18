@@ -38,6 +38,11 @@ dependencies {
     provided "org.grails:grails-plugin-domain-class"
     testCompile "org.grails:grails-plugin-testing"
 }
+
+bootRun {
+    jvmArgs = ['-Dspring.output.ansi.enabled=always']
+}// enable if you wish to package this plugin as a standalone application
+bootRepackage.enabled = false
 grailsPublish {
     // TODO: Provide values here
     user = 'user'
