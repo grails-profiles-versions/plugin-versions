@@ -36,6 +36,7 @@ dependencies {
 bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
     addResources = true
+    systemProperties System.properties
 }
 // enable if you wish to package this plugin as a standalone application
 bootRepackage.enabled = false
